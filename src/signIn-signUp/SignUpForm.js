@@ -56,47 +56,50 @@ export default function SignUpForm() {
   }
 
   return (
-    <div className="sign-up-container">
-        <h2>I do not have an account</h2>
-      <span>Sign up with your email and password</span>
-      <form onSubmit={(e) => sendDataToFireBase(e)}>
+    <>
         
-        <FormInput
-          label = "Full Name"
-          type="text"
-          name="displayName"
-          value={displayName}
-          onChange={handleChange}
-        />
+        <div className="sign-up-container">
+            <h2>I do not have an account</h2>
+        <span>Sign up with your email and password</span>
+        <form onSubmit={(e) => sendDataToFireBase(e)}>
+            
+            <FormInput
+            label = "Full Name"
+            type="text"
+            name="displayName"
+            value={displayName}
+            onChange={handleChange}
+            />
 
-        
-        <FormInput
-          label = "Email"
-          type="email"
-          name="email"
-          value={email}
-          onChange={handleChange}
-        />
+            
+            <FormInput
+            label = "Email"
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+            />
 
-        
-        <FormInput
-          label = "Password"
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
-        />
-        
-        <FormInput
-          label = "Confirm Password"
-          type="password"
-          name="confirmPassword"
-          value={confirmPassword}
-          onChange={handleChange}
-        />
+            
+            <FormInput
+            label = "Password"
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+            />
+            
+            <FormInput
+            label = "Confirm Password"
+            type="password"
+            name="confirmPassword"
+            value={confirmPassword}
+            onChange={handleChange}
+            />
 
-        <Button type="submit">Sign Up</Button>
-      </form>
-    </div>
+            <Button type="submit">Sign Up</Button>
+        </form>
+        </div>
+    </>
   );
 }
