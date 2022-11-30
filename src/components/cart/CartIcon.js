@@ -5,7 +5,9 @@ import { CartContext } from '../../contexts/cart-context';
 
 export default function CartIcon() {
 
-    const {isCartOpen, setIsCartOpen} = useContext(CartContext);
+    const {isCartOpen, setIsCartOpen,totalItem} = useContext(CartContext);
+    
+
 
     function toggleCart() {
         setIsCartOpen(!isCartOpen)
@@ -13,7 +15,7 @@ export default function CartIcon() {
   return (
     <div className='cart-icon-container' onClick={toggleCart}>
         <Bag className= "shopping-icon" />
-        <span className='item-count'>0</span>
+        <span className='item-count'>{totalItem}</span>
 
     </div>
   )
