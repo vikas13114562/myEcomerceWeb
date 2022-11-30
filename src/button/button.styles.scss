@@ -1,11 +1,11 @@
 .button-container {
-  min-width: 165px;
+  min-width: 10.32rem;
   width: auto;
-  height: 50px;
+  height: 3.1rem;
   letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  line-height: 3.1rem;
+  padding: 0 2rem 0 2rem;
+  // font-size: .9rem;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -27,7 +27,7 @@
     color: white;
 
     &:hover {
-      background-color: #357ae8;
+      background-color: green;
       border: none;
     }
   }

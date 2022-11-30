@@ -8,13 +8,13 @@ const buttonClasses = {
 
 export default function Button({children,buttonType,...otherProps}) {
   return (
-    <div>
+    <>
       <button
         className={`button-container ${buttonClasses[buttonType]}`}
         {...otherProps}
       >
         {children}
       </button>
-    </div>
+    </>
   );
 }

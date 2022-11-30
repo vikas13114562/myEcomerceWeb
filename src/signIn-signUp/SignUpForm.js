@@ -4,6 +4,7 @@ import FormInput from "./FormInput";
 import './form-input.styles.scss'
 import Button from "../button/Button";
 
+
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocFromAuth,
@@ -11,6 +12,9 @@ import {
 
 
 export default function SignUpForm() {
+
+
+
   const obj = {
     displayName: "",
     email: "",
@@ -47,6 +51,7 @@ export default function SignUpForm() {
         email,
         password
       );
+     
 
       await createUserDocFromAuth(user, { displayName });
       resetFormField();

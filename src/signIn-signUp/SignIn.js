@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import FormInput from "./FormInput";
 
+
+
 import Button from "../button/Button";
 import './signIn.styles.scss'
 
@@ -24,14 +26,15 @@ export default function SignIn() {
   }
 
   const signInWithGoogle = async ()=> {
-    const {user} = await signInWithGooglePopup()
-    createUserDocFromAuth(user)
+    await signInWithGooglePopup()
     
   }
 
   const [formData, setFormData] = useState(obj);
 
   const { email, password } = formData;
+
+ 
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -44,7 +47,7 @@ export default function SignIn() {
   async function sendDataToFireBase(e) {
     e.preventDefault();
     try{
-      await signInAuthUserWithEmailAndPassword(email,password);
+      const {user} = await signInAuthUserWithEmailAndPassword(email,password);
       
     }
     catch(error) {
