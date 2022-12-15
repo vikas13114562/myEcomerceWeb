@@ -14,7 +14,7 @@ import { UserContext } from "../contexts/user.context";
 import { signOutUser } from '../utils/firebaseUtils/Firebase'
 
 export default function Navigation() {
-  const { currUser, setCurrUser } = useContext(UserContext);
+  const { currUser } = useContext(UserContext);
   const {isCartOpen} = useContext(CartContext)
 
   
