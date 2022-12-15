@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../contexts/cart-context";
 
 import { Outlet, Link } from "react-router-dom";
-import { ReactComponent as Clogo } from "../img/crown.svg";
+// import { ReactComponent as Clogo } from "../img/logo1.svg";
 
 import CartIcon from './cart/CartIcon'
 import CartDropdown from './cart-dropdown/CartDropdown'
@@ -21,10 +21,15 @@ export default function Navigation() {
   return (
     <>
       <div className="navigation">
+        
         <Link className="logo-container" to="/">
-          <Clogo className="logo" />
+          <div className="logo">Click to Cart</div>
+          
         </Link>
         <div className="nav-links-container">
+        <Link className="nav-link" to="/">
+            HOME
+          </Link>
           <Link className="nav-link" to="/shop">
             SHOP
           </Link>
