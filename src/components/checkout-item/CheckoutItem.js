@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import './checkout-item.styles.scss'
 import { CartContext } from '../../contexts/cart-context'
 
+
 export default function CheckoutItem({cartItem}) {
 
     const {remove, addToCart, removeFromCart} = useContext(CartContext)
@@ -25,6 +26,7 @@ export default function CheckoutItem({cartItem}) {
             </span>
         <span className='price'>{price}</span>
         <div className='remove-button'  onClick={removeHandler} >&#10005;</div>
+        
     </div>
   )
 }
