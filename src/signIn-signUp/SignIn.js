@@ -9,7 +9,7 @@ import './signIn.styles.scss'
 
 import {
   signInAuthUserWithEmailAndPassword,
-  createUserDocFromAuth,
+  
   signInWithGooglePopup,
 } from "../utils/firebaseUtils/Firebase";
 

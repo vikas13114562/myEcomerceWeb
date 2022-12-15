@@ -20,7 +20,7 @@ export default function CartDropdown() {
   return (
     <div className='cart-dropdown-container'>
         {
-            cartItems.length ==0?<h3>Cart is empty</h3> :<div className='cart-item'>
+            cartItems.length ===0?<h3>Cart is empty</h3> :<div className='cart-item'>
             {cartItems.map(ele => {
               return(
                   <CartItem cartItem = {ele} key = {ele.id} />
