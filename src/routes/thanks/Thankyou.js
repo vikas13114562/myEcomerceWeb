@@ -7,7 +7,7 @@ export default function Thankyou() {
 
   useEffect(()=> {
     setCartItems([])
-  },[])
+  },[setCartItems])
   
   return (
     <div className='thanks'>

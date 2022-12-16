@@ -1,5 +1,5 @@
 import React from 'react'
-import {signInWithGooglePopup, createUserDocFromAuth} from '../utils/firebaseUtils/Firebase'
+// import {signInWithGooglePopup, createUserDocFromAuth} from '../utils/firebaseUtils/Firebase'
 import SignUpForm from '../signIn-signUp/SignUpForm'
 import SignIn from '../signIn-signUp/SignIn'
 import './auth.styles.scss'

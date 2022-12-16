@@ -21,9 +21,9 @@ export default function SignIn() {
     
   };
 
-  function resetFormField() {
-    setFormData(obj);
-  }
+  // function resetFormField() {
+  //   setFormData(obj);
+  // }
 
   const signInWithGoogle = async ()=> {
     await signInWithGooglePopup()
@@ -47,7 +47,8 @@ export default function SignIn() {
   async function sendDataToFireBase(e) {
     e.preventDefault();
     try{
-      const {user} = await signInAuthUserWithEmailAndPassword(email,password);
+      // const {user} = await signInAuthUserWithEmailAndPassword(email,password);
+      await signInAuthUserWithEmailAndPassword(email,password);
       
     }
     catch(error) {

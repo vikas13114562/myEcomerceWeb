@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Checkout() {
 
     const navigate = useNavigate()
-    const {cartItems, addToCart, removeFromCart,totalPrice} = useContext(CartContext);
+    const {cartItems, totalPrice} = useContext(CartContext);
   return (
     <div className='checkout-container'>
         <div className='checkout-header'>
