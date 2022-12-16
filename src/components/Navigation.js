@@ -3,11 +3,10 @@ import React, { useContext } from "react";
 import { CartContext } from "../contexts/cart-context";
 
 import { Outlet, Link } from "react-router-dom";
-// import { ReactComponent as Clogo } from "../img/logo1.svg";
 
 import CartIcon from './cart/CartIcon'
 import CartDropdown from './cart-dropdown/CartDropdown'
-import "./navigation.styles.scss";
+import "./navigation.css";
 
 import { UserContext } from "../contexts/user.context";
 
@@ -23,8 +22,10 @@ export default function Navigation() {
       <div className="navigation">
         
         <Link className="logo-container" to="/">
-          <div className="logo">Click to Cart</div>
-          
+          <div className="logo-text">
+            <h5>Click to Cart</h5>
+            
+          </div>  
         </Link>
         <div className="nav-links-container">
         <Link className="nav-link" to="/">
