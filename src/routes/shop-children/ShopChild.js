@@ -5,7 +5,7 @@ import CategoryPreview from '../../components/categories-preview/CategoryPreview
 
 export default function ShopChild() {
     const {categoriesMap} = useContext(ProductsContext)
-    console.log(categoriesMap);
+    
     
   return (
     <>
